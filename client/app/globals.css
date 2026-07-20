@@ -92,4 +92,15 @@ body {
 .ProseMirror li {
   margin: 0.25rem 0;
   line-height: 1.6;
+  color: #111827;
+}
+
+/* Force bullet and number markers to be black */
+.ProseMirror ul li::marker {
+  color: #111827;
+}
+
+.ProseMirror ol li::marker {
+  color: #111827;
+  font-weight: 500;
 }
