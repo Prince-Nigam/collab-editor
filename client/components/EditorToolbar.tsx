@@ -21,7 +21,11 @@ function ToolbarButton({
   return (
     <button
       type="button"
-      onClick={onClick}
+      // onMouseDown instead of onClick — prevents editor from losing focus
+      onMouseDown={(e) => {
+        e.preventDefault(); // prevent blur on editor
+        onClick();
+      }}
       title={title}
       className={`px-2.5 py-1.5 rounded text-sm font-medium transition ${
         active
