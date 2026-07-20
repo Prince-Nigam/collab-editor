@@ -227,7 +227,7 @@ export default function DocumentPage() {
                   setEditingTitle(false);
                 }
               }}
-              className="text-lg font-semibold text-gray-800 border-b-2 border-indigo-400 focus:outline-none bg-transparent min-w-0 flex-1"
+              className="text-lg font-semibold text-gray-900 bg-white border-b-2 border-indigo-400 focus:outline-none min-w-0 flex-1"
             />
           ) : (
             <h1

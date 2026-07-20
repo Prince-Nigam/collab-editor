@@ -84,7 +84,7 @@ export default function DocumentCard({ doc, isOwner, onDelete, onRename }: Props
                 if (e.key === 'Escape') { setEditing(false); setTitle(doc.title); }
               }}
               onClick={(e) => e.stopPropagation()}
-              className="w-full text-sm font-medium border border-indigo-400 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="w-full text-sm font-medium text-gray-900 bg-white border border-indigo-400 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               disabled={saving}
             />
           ) : (
